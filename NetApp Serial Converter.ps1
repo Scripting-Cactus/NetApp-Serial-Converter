@@ -1,4 +1,4 @@
-﻿$version =  "v1.1.4"
+﻿$version =  "v1.1.5"
 $host.ui.RawUI.WindowTitle = “NetApp Serial Converter $version”
 Function menu ()
     {
@@ -15,6 +15,8 @@ Function menu ()
                 write-host "2. Convert WWN ID to NetApp Serial Number"
                 write-host ""
                 write-host "Note: Type 'help' at any prompt for addtional options"
+                write-host ""
+                write-host "Version - $version"
                 write-host ""
                 $fuction_select = read-host -prompt "Option"
             }
