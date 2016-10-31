@@ -1,4 +1,4 @@
-﻿$version =  "v1.1.5"
+﻿$version =  "v1.1.6"
 $host.ui.RawUI.WindowTitle = “NetApp Serial Converter $version”
 Function menu ()
     {
@@ -16,7 +16,7 @@ Function menu ()
                 write-host ""
                 write-host "Note: Type 'help' at any prompt for addtional options"
                 write-host ""
-                write-host "Version - $version"
+                write-host "Version: $version"
                 write-host ""
                 $fuction_select = read-host -prompt "Option"
             }
@@ -44,22 +44,14 @@ Function menu ()
                         menu
                         return
                     }
-                "help" 
+                {($_ -eq "help") -or ($_ -eq "?")} 
                     { 
                         help_menu
                         return
                     }
-                "?" {
-                        help_menu
-                        return 
-                    }
-                "exit" 
+                {($_ -eq "exit") -or ($_ -eq "quit")} 
                     { 
                         return 
-                    }
-                "quit" 
-                    { 
-                        return
                     }
             }
     }
