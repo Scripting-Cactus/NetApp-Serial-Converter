@@ -1,4 +1,4 @@
-﻿$version =  "v1.1.6"
+﻿$version =  "v1.1.7"
 $host.ui.RawUI.WindowTitle = “NetApp Serial Converter $version”
 Function menu ()
     {
@@ -18,16 +18,16 @@ Function menu ()
                 write-host ""
                 write-host "Version: $version"
                 write-host ""
-                $fuction_select = read-host -prompt "Option"
+                $function_select = read-host -prompt "Option"
             }
-        until ($fuction_select -eq "1" -or 
-               $fuction_select -eq "2" -or 
-               $fuction_select -eq "menu" -or 
-               $fuction_select -eq "quit" -or 
-               $fuction_select -eq "exit" -or 
-               $fuction_select -eq "help" -or 
-               $fuction_select -eq "?")
-        Switch ($fuction_select)
+        until ($function_select -eq "1" -or 
+               $function_select -eq "2" -or 
+               $function_select -eq "menu" -or 
+               $function_select -eq "quit" -or 
+               $function_select -eq "exit" -or 
+               $function_select -eq "help" -or 
+               $function_select -eq "?")
+        Switch ($function_select)
             {
                 "1" 
                     { 
@@ -38,7 +38,7 @@ Function menu ()
                     {
                         sub_menu_2
                         return
-                    }
+                    } 
                 "menu" 
                     {
                         menu
