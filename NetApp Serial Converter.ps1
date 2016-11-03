@@ -9,7 +9,7 @@ $invocation = (Get-Variable MyInvocation).Value
 $directorypath = Split-Path $invocation.MyCommand.Path 
 $directorypath = $directorypath + '\Assets'
 $Lun_Serial_Array=@()
-$version = "v2.0.0"
+$version = "v2.0.1"
 [void][System.Reflection.Assembly]::LoadWithPartialName('presentationframework')
 $Base64_Logo = "iVBORw0KGgoAAAANSUhEUgAAAFIAAABeCAYAAACw7kPgAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAABl0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC4xMkMEa+wAAAb4SURBVHhe7ZxriFVVFMfvjAU9sB`
                 Kraeaefe7cO5Nj9qCYCqKXRAyV2SSmBiVFiWY1ReCHQGsqSypC9ENGSfSyD70gCUSQ6OEYET0waCiJQkozmUobS0od+6991953n8e8Yk0NuP7w556zHvvs87vn7HPmChYKC3u61aN018cnFDJatOWwepRe8F7E9ALlFaqHtoIUsoIU`
